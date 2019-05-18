@@ -34,7 +34,7 @@ public static class Distributions{
         System.Random random = new System.Random();
         int r = random.Next(0, 10000);
         double y = r / 10000.0;
-        return -(Math.Log(y / lamda)/lamda);
+        return -lamda*(Math.Log(y ));
     }
 
     public static Boolean BernoulliGenerator(double p){
